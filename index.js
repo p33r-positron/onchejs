@@ -35,7 +35,7 @@ async function postMsg(msg, topic, auth, sess)
 	});
 };
 
-async function getMsg(topic)
+async function getMsg(topic, auth, sess)
 {
 	let f = await fetch(topic, {
 		"credentials": "include",
