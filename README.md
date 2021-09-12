@@ -20,7 +20,7 @@ async function main()
 	setInterval(async()=>{
 		console.log("Check du dernier message...");
 
-		var msg = await getMsg(config.topic);
+		var msg = await getMsg(config.topic, config.auth, config.sess);
 		var args = msg.split(" ");
 		var cmd = args.shift();
 
