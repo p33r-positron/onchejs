@@ -1,6 +1,6 @@
 {
   "name": "onchejs",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Pour faire des bots sur onche.org (onche.party v3)",
   "main": "index.js",
   "scripts": {

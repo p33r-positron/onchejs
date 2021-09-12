@@ -28,22 +28,24 @@ async function main()
 		{
 			case "!echo":
 				console.log("[Echo]");
-				await postMsg(args.join(" "));
+				await postMsg(args.join(" "), config.topic, config.auth, config.sess);
 				break;
 
 			case "!date":
 				console.log("[Date]");
-				await postMsg(Date().toString());
+				await postMsg(Date().toString(), config.topic, config.auth, config.sess);
 				break;
 
 			default:
-				console.log("[PATH-ERROR]");
 				if(cmd.startsWith("!"))
-					await postMsg("Commande non reconnue :(");
+				{
+					console.log("[PATH-ERROR]");
+					await postMsg("Commande non reconnue :(", config.topic, config.auth, config.sess);
+				};
 		};
 
 		console.log("Fin du check !");
-	}, 60000); //Check toutes les minutes
+	}, 10000);
 };
 
 main();
