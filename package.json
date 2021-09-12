@@ -1,0 +1,27 @@
+{
+  "name": "onchejs",
+  "version": "1.0.1",
+  "description": "Pour faire des bots sur onche.org (onche.party v3)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p33r-positron/onchejs.git"
+  },
+  "keywords": [
+    "onche",
+    "onche.party",
+    "onche.org"
+  ],
+  "author": "p33r-positron",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/p33r-positron/onchejs/issues"
+  },
+  "homepage": "https://github.com/p33r-positron/onchejs#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
