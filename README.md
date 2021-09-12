@@ -43,7 +43,7 @@ async function main()
 		};
 
 		console.log("Fin du check !");
-	});
+	}, 60000); //Check toutes les minutes
 };
 
 main();
